@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>About Me | EtherSpace of Nian</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://saoyear.github.io/favicon.ico?v=1717479538719">
+<link rel="stylesheet" href="https://saoyear.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="I am a PhD. student in the Westlake University, Audio and Signal Processing labrotoray. My current supervisor is Dr. Xia..." />
+    <meta name="keywords" content="About me" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://saoyear.github.io">
+        <img src="https://saoyear.github.io/images/avatar.png?v=1717479538719" class="site-logo">
+        <h1 class="site-title">EtherSpace of Nian</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            Home
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            Publications
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            Blogs
+          </a>
+        
+      
+        
+          <a href="https://saoyear.github.io/post/about_me" class="site-nav">
+            About me
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/SaoYear" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/saoyear" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Welcome to my site!
+<br />
+I am a PhD. student @ Westlake University. My research interests include <b> sound event detection </b>;  <b>semi-supervised / self-supervised learning </b> in audio processing. <br /> 
+Feel free to contact me: sao_year@126.com
+    </div>
+    <div class="site-footer">
+      Nian Shao, PhD. student @ Westlake University | <a class="rss" href="https://saoyear.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">About Me</h2>
+            <div class="post-date">2021-09-01</div>
+            
+            <div class="post-content" v-pre>
+              <p>I am a PhD. student in the Westlake University, <a href="https://audio.westlake.edu.cn/">Audio and Signal Processing labrotoray</a>. My current supervisor is <a href="https://audio.westlake.edu.cn/People.htm">Dr. Xiaofei Li</a>.</p>
+<p>Before that, I obtained my MSc. degree from the University of Edinburgh (UoE), majoring on Speech and Language Processing. My MSc. dissertation is supervised by <a href="https://eloweimi.github.io/">Dr. Erfan Loweimi</a></p>
+<p>And I obtained dual bachelor degrees from the University of Electronic Science and Technology of China (UESTC) and the University of Glasgow (UoG), majoring on electronic information engineering.</p>
+<p>If you are interested in experiences / finding collaborations on any potential research topic. Feel free to contact me by sao_year@126.com.</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://saoyear.github.io/tag/a9MavUwEX/" class="tag">
+                    About me
+                  </a>
+                
+              </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'd110d408179ab00c332f',
+        clientSecret: 'b054f3e6b2ad769c3d0a095dcf58d74f5884906b',
+        repo: 'SaoYear.github.io',
+        owner: 'SaoYear',
+        admin: ['SaoYear'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

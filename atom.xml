@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://saoyear.github.io</id>
+    <title>EtherSpace of Nian</title>
+    <updated>2024-06-04T05:39:00.570Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://saoyear.github.io"/>
+    <link rel="self" href="https://saoyear.github.io/atom.xml"/>
+    <subtitle>Welcome to my site!
+&lt;br /&gt;
+I am a PhD. student @ Westlake University. My research interests include &lt;b&gt; sound event detection &lt;/b&gt;;  &lt;b&gt;semi-supervised / self-supervised learning &lt;/b&gt; in audio processing. &lt;br /&gt; 
+Feel free to contact me: sao_year@126.com</subtitle>
+    <logo>https://saoyear.github.io/images/avatar.png</logo>
+    <icon>https://saoyear.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, EtherSpace of Nian</rights>
+    <entry>
+        <title type="html"><![CDATA[Downloading REAL SUPERVISED waveforms for DESED]]></title>
+        <id>https://saoyear.github.io/post/downloading-real-waveforms-for-desed/</id>
+        <link href="https://saoyear.github.io/post/downloading-real-waveforms-for-desed/">
+        </link>
+        <updated>2023-12-28T13:03:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>An easy access of useful datasets for the DESED, domestic environment sound event detection dataset, including the <strong>weakly labelled real</strong>, <strong>strongly labelled real</strong>, <strong>strongly labelled external real (from StrongAudioSet)</strong> and <strong>DCASE development set</strong>. All datasets are provided with both wavforms and labels.</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>An easy access of useful datasets for the DESED, domestic environment sound event detection dataset, including the <strong>weakly labelled real</strong>, <strong>strongly labelled real</strong>, <strong>strongly labelled external real (from StrongAudioSet)</strong> and <strong>DCASE development set</strong>. All datasets are provided with both wavforms and labels.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fine-tune the Pretrained ATST Model for Sound Event Detection]]></title>
+        <id>https://saoyear.github.io/post/finetune_ATST_SED/</id>
+        <link href="https://saoyear.github.io/post/finetune_ATST_SED/">
+        </link>
+        <updated>2023-09-20T06:43:57.000Z</updated>
+        <summary type="html"><![CDATA[<p>[Accepted by ICASSP 2024] We introduce a fine-tuning method for the pretrained model (<a href="https://arxiv.org/abs/2306.04186">ATST-Frame</a>) integrated in the SED system. And we obtain new SOTA performances on the DESED development dataset.</p>
+<h3 id="authors">Authors</h3>
+<p>Nian Shao; Xian Li; Xiaofei Li</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>[Accepted by ICASSP 2024] We introduce a fine-tuning method for the pretrained model (<a href="https://arxiv.org/abs/2306.04186">ATST-Frame</a>) integrated in the SED system. And we obtain new SOTA performances on the DESED development dataset.</p>
+<h3 id="authors">Authors</h3>
+<p>Nian Shao; Xian Li; Xiaofei Li</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Frame-wise Streaming End-to-end Speaker Diarization with Non-autoregressive Self-attention-based Attractors]]></title>
+        <id>https://saoyear.github.io/post/FS_EEND/</id>
+        <link href="https://saoyear.github.io/post/FS_EEND/">
+        </link>
+        <updated>2023-09-01T07:09:56.000Z</updated>
+        <summary type="html"><![CDATA[<p>[Accepcted by ICASSP 2024] We propose a  novel online EEND model for  speaker diarization task, and obtain SOTA performances on the synthetic/CALLHOME datasets.</p>
+<h3 id="authors">Authors</h3>
+<p>Di Liang; Nian Shao; Xiaofei Li</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>[Accepcted by ICASSP 2024] We propose a  novel online EEND model for  speaker diarization task, and obtain SOTA performances on the synthetic/CALLHOME datasets.</p>
+<h3 id="authors">Authors</h3>
+<p>Di Liang; Nian Shao; Xiaofei Li</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Self-supervised Audio Teacher-Student Transformer for Both Clip-level and Frame-level Tasks]]></title>
+        <id>https://saoyear.github.io/post/ATST_Frame/</id>
+        <link href="https://saoyear.github.io/post/ATST_Frame/">
+        </link>
+        <updated>2023-06-30T06:54:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>[Accepted by TASLP] We introduce a novel Self-Supervised Learning model for audio processing, named ATST-Frame. Thorough experiments on clip/frame-level downstream tasks are implemented. SOTA performances are obtained on most task.</p>
+<h3 id="authors">Authors</h3>
+<p>Xian Li; Nian Shao; Xiaofei Li</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>[Accepted by TASLP] We introduce a novel Self-Supervised Learning model for audio processing, named ATST-Frame. Thorough experiments on clip/frame-level downstream tasks are implemented. SOTA performances are obtained on most task.</p>
+<h3 id="authors">Authors</h3>
+<p>Xian Li; Nian Shao; Xiaofei Li</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ATST Self-supervised plus RCT Semi-supervised Sound Event Detection: Submission to DCASE 2022 Challenge Task 4]]></title>
+        <id>https://saoyear.github.io/post/ATST_RCT_SED/</id>
+        <link href="https://saoyear.github.io/post/ATST_RCT_SED/">
+        </link>
+        <updated>2022-06-01T07:16:37.000Z</updated>
+        <summary type="html"><![CDATA[<p>[DCASE 2022 tech. report] The technical report for our submitted system in the DCASE 2022 challenge, task 4. We integrate the pretrained <a href="https://arxiv.org/abs/2204.12076">ATST-Clip</a> with a CRNN model and obtain 4th place in the challenge (single model + using extra dataset).</p>
+<h3 id="authors">Authors</h3>
+<p>Nian Shao; Xian Li; Xiaofei Li</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>[DCASE 2022 tech. report] The technical report for our submitted system in the DCASE 2022 challenge, task 4. We integrate the pretrained <a href="https://arxiv.org/abs/2204.12076">ATST-Clip</a> with a CRNN model and obtain 4th place in the challenge (single model + using extra dataset).</p>
+<h3 id="authors">Authors</h3>
+<p>Nian Shao; Xian Li; Xiaofei Li</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RCT: Random Consistency Training for Sound Event Detection]]></title>
+        <id>https://saoyear.github.io/post/RCT/</id>
+        <link href="https://saoyear.github.io/post/RCT/">
+        </link>
+        <updated>2022-03-31T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>[Accepcted by Interspeech 2022] We introduce a semi-supervised learning method for SED and test its performance over DESED dataset. We obtain SOTA performance in all CRNN-based models, surpassing SCT and ICT methods.</p>
+<h3 id="authors">Authors</h3>
+<p>Nian Shao; Erfan Loweimi; Xiaofei Li</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>[Accepcted by Interspeech 2022] We introduce a semi-supervised learning method for SED and test its performance over DESED dataset. We obtain SOTA performance in all CRNN-based models, surpassing SCT and ICT methods.</p>
+<h3 id="authors">Authors</h3>
+<p>Nian Shao; Erfan Loweimi; Xiaofei Li</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mixhead: Breaking the low-rank bottleneck in multi-head attention language models]]></title>
+        <id>https://saoyear.github.io/post/mix_head_attn/</id>
+        <link href="https://saoyear.github.io/post/mix_head_attn/">
+        </link>
+        <updated>2022-01-01T07:02:42.000Z</updated>
+        <summary type="html"><![CDATA[<p>[Accepted by KBS] We propose a novel solution for solving the representation bottleneck. By theoratically provements, we verify the existence of the problem and successfully increase the representation ability of the Transformer model. Experiments are done with language modeling/GLUE tasks on Transformer/BERT models.</p>
+<h3 id="authors">Authors</h3>
+<p>Zhong Zhang; Nian Shao; Chongming Gao; Rui Miao; Qinli Yang; Junming Shao</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>[Accepted by KBS] We propose a novel solution for solving the representation bottleneck. By theoratically provements, we verify the existence of the problem and successfully increase the representation ability of the Transformer model. Experiments are done with language modeling/GLUE tasks on Transformer/BERT models.</p>
+<h3 id="authors">Authors</h3>
+<p>Zhong Zhang; Nian Shao; Chongming Gao; Rui Miao; Qinli Yang; Junming Shao</p>
+]]></content>
+    </entry>
+</feed>

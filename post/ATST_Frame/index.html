@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Self-supervised Audio Teacher-Student Transformer for Both Clip-level and Frame-level Tasks | EtherSpace of Nian</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://saoyear.github.io/favicon.ico?v=1717479538719">
+<link rel="stylesheet" href="https://saoyear.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="[Accepted by TASLP] We introduce a novel Self-Supervised Learning model for audio processing, named ATST-Frame. Thorough..." />
+    <meta name="keywords" content="Publications" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://saoyear.github.io">
+        <img src="https://saoyear.github.io/images/avatar.png?v=1717479538719" class="site-logo">
+        <h1 class="site-title">EtherSpace of Nian</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            Home
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            Publications
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            Blogs
+          </a>
+        
+      
+        
+          <a href="https://saoyear.github.io/post/about_me" class="site-nav">
+            About me
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/SaoYear" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/saoyear" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Welcome to my site!
+<br />
+I am a PhD. student @ Westlake University. My research interests include <b> sound event detection </b>;  <b>semi-supervised / self-supervised learning </b> in audio processing. <br /> 
+Feel free to contact me: sao_year@126.com
+    </div>
+    <div class="site-footer">
+      Nian Shao, PhD. student @ Westlake University | <a class="rss" href="https://saoyear.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Self-supervised Audio Teacher-Student Transformer for Both Clip-level and Frame-level Tasks</h2>
+            <div class="post-date">2023-06-30</div>
+            
+              <div class="feature-container" style="background-image: url('https://saoyear.github.io/post-images/ATST_Frame.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>[Accepted by TASLP] We introduce a novel Self-Supervised Learning model for audio processing, named ATST-Frame. Thorough experiments on clip/frame-level downstream tasks are implemented. SOTA performances are obtained on most task.</p>
+<h3 id="authors">Authors</h3>
+<p>Xian Li; Nian Shao; Xiaofei Li</p>
+<!-- more -->
+<h3 id="abstract">Abstract</h3>
+<p>In recent years, self-supervised learning (SSL) has emerged as a popular approach for learning audio representations. The ultimate goal of audio self-supervised pre-training is to transfer knowledge to downstream audio tasks, generally including clip-level and frame-level tasks. Clip-level tasks classify the scene or sound of an entire audio clip, e.g. audio tagging, instrument recognition, etc. While frame-level tasks detect event-level timestamps from an audio clip, e.g. sound event detection, speaker diarization, etc. Prior studies primarily evaluate on clip-level downstream tasks. Frame-level tasks are important for fine-grained acoustic scene/event understanding, and are generally more challenging than clip-level tasks. In order to tackle both clip-level and frame-level tasks, this paper proposes two self-supervised audio representation learning methods: ATST-Clip and ATST-Frame, responsible for learning clip-level and frame-level representations, respectively. ATST stands for Audio Teacher-Student Transformer, which means both methods use a transformer encoder and a teacher-student training scheme.Experimental results show that our ATST-Frame model obtains state-of-the-art (SOTA) performance on most of the clip-level and frame-level downstream tasks. Especially, it outperforms other models by a large margin on the frame-level sound event detection task. In addition, the performance can be further improved by combining the two models through knowledge distillation.</p>
+<h3 id="url">URL</h3>
+<p>https://arxiv.org/pdf/2306.04186.pdf</p>
+<h3 id="code">Code</h3>
+<p><a href="https://github.com/Audio-WestlakeU/audiossl">Published on github</a></p>
+<h3 id="training-overflow">Training Overflow</h3>
+<figure data-type="image" tabindex="1"><img src="https://saoyear.github.io/post-images/1695193134995.png" alt="" loading="lazy"></figure>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://saoyear.github.io/tag/LxSu5Vybm/" class="tag">
+                    Publications
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://saoyear.github.io/post/ATST_RCT_SED/">
+                  <h3 class="post-title">
+                    ATST Self-supervised plus RCT Semi-supervised Sound Event Detection: Submission to DCASE 2022 Challenge Task 4
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'd110d408179ab00c332f',
+        clientSecret: 'b054f3e6b2ad769c3d0a095dcf58d74f5884906b',
+        repo: 'SaoYear.github.io',
+        owner: 'SaoYear',
+        admin: ['SaoYear'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

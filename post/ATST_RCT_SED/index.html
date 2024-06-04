@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>ATST Self-supervised plus RCT Semi-supervised Sound Event Detection: Submission to DCASE 2022 Challenge Task 4 | EtherSpace of Nian</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://saoyear.github.io/favicon.ico?v=1717479538719">
+<link rel="stylesheet" href="https://saoyear.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="[DCASE 2022 tech. report] The technical report for our submitted system in the DCASE 2022 challenge, task 4. We integrat..." />
+    <meta name="keywords" content="Publications" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://saoyear.github.io">
+        <img src="https://saoyear.github.io/images/avatar.png?v=1717479538719" class="site-logo">
+        <h1 class="site-title">EtherSpace of Nian</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            Home
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            Publications
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            Blogs
+          </a>
+        
+      
+        
+          <a href="https://saoyear.github.io/post/about_me" class="site-nav">
+            About me
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/SaoYear" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/saoyear" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Welcome to my site!
+<br />
+I am a PhD. student @ Westlake University. My research interests include <b> sound event detection </b>;  <b>semi-supervised / self-supervised learning </b> in audio processing. <br /> 
+Feel free to contact me: sao_year@126.com
+    </div>
+    <div class="site-footer">
+      Nian Shao, PhD. student @ Westlake University | <a class="rss" href="https://saoyear.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">ATST Self-supervised plus RCT Semi-supervised Sound Event Detection: Submission to DCASE 2022 Challenge Task 4</h2>
+            <div class="post-date">2022-06-01</div>
+            
+              <div class="feature-container" style="background-image: url('https://saoyear.github.io/post-images/ATST_RCT_SED.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>[DCASE 2022 tech. report] The technical report for our submitted system in the DCASE 2022 challenge, task 4. We integrate the pretrained <a href="https://arxiv.org/abs/2204.12076">ATST-Clip</a> with a CRNN model and obtain 4th place in the challenge (single model + using extra dataset).</p>
+<h3 id="authors">Authors</h3>
+<p>Nian Shao; Xian Li; Xiaofei Li</p>
+<!-- more -->
+<h3 id="abstract">Abstract</h3>
+<p>In this report, we present our methods proposed for participating the Detection and Classification of Acoustic Scenes and Events (DCASE) 2022 Challenge Task 4: Sound Event Detection in Domestic Environments. The proposed methods integrate a semisupervised sound event detection model (called random consistency training, RCT) trained with the relatively small official dataset of the challenge, and a self-supervised model (called audio  teacherstudent transformer, ATST) trained with the very large AudioSet. RCT uses the baseline convolutional recurrent neural network (CRNN) of the challenge, and adopts a newly proposed semisupervised learning scheme based on random data augmentation and a self-consistency loss. To integrate ATST into RCT, the feature extracted by ATST is concatenated with the feature extracted by the convolutional layers of RCT, and then fed to the RNN layers of RCT. It is found that these two types of feature are complementary and the performance can be largely improved by combining them. In development, RCT individually achieves 39.80% and 61.12% of PSDS1 and PSDS2, respectively, which are improved to 45.99% and 70.65% by integrating the ATST feature, and further to 47.71% and 73.44% by ensembling five models with different training configurations.</p>
+<h3 id="url">URL</h3>
+<p>https://dcase.community/documents/challenge2022/technical_reports/DCASE2022_Shao_35_t4.pdf</p>
+<h3 id="code">Code</h3>
+<p><a href="https://github.com/Audio-WestlakeU/ATST-RCT">Published on github</a></p>
+<h3 id="main-results">Main Results</h3>
+<figure data-type="image" tabindex="1"><img src="https://saoyear.github.io/post-images/1695194557716.png" alt="" loading="lazy"></figure>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://saoyear.github.io/tag/LxSu5Vybm/" class="tag">
+                    Publications
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://saoyear.github.io/post/RCT/">
+                  <h3 class="post-title">
+                    RCT: Random Consistency Training for Sound Event Detection
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'd110d408179ab00c332f',
+        clientSecret: 'b054f3e6b2ad769c3d0a095dcf58d74f5884906b',
+        repo: 'SaoYear.github.io',
+        owner: 'SaoYear',
+        admin: ['SaoYear'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

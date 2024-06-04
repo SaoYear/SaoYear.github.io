@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Mixhead: Breaking the low-rank bottleneck in multi-head attention language models | EtherSpace of Nian</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://saoyear.github.io/favicon.ico?v=1717479538719">
+<link rel="stylesheet" href="https://saoyear.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="[Accepted by KBS] We propose a novel solution for solving the representation bottleneck. By theoratically provements, we..." />
+    <meta name="keywords" content="Publications" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://saoyear.github.io">
+        <img src="https://saoyear.github.io/images/avatar.png?v=1717479538719" class="site-logo">
+        <h1 class="site-title">EtherSpace of Nian</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            Home
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            Publications
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            Blogs
+          </a>
+        
+      
+        
+          <a href="https://saoyear.github.io/post/about_me" class="site-nav">
+            About me
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/SaoYear" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/saoyear" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Welcome to my site!
+<br />
+I am a PhD. student @ Westlake University. My research interests include <b> sound event detection </b>;  <b>semi-supervised / self-supervised learning </b> in audio processing. <br /> 
+Feel free to contact me: sao_year@126.com
+    </div>
+    <div class="site-footer">
+      Nian Shao, PhD. student @ Westlake University | <a class="rss" href="https://saoyear.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Mixhead: Breaking the low-rank bottleneck in multi-head attention language models</h2>
+            <div class="post-date">2022-01-01</div>
+            
+              <div class="feature-container" style="background-image: url('https://saoyear.github.io/post-images/mix_head_attn.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>[Accepted by KBS] We propose a novel solution for solving the representation bottleneck. By theoratically provements, we verify the existence of the problem and successfully increase the representation ability of the Transformer model. Experiments are done with language modeling/GLUE tasks on Transformer/BERT models.</p>
+<h3 id="authors">Authors</h3>
+<p>Zhong Zhang; Nian Shao; Chongming Gao; Rui Miao; Qinli Yang; Junming Shao</p>
+<!-- more -->
+<h3 id="abstract">Abstract</h3>
+<p>The Transformer-based models have achieved significant advances in language modeling, while the multi-head attention mechanism in Transformers plays an indispensable part in their success. However, the too-small head size caused by the multi-head mechanism will lead to one problem called the low-rank bottleneck, which means that the rank of the attention weight matrix is too small to represent any desired attention. Naively increasing the head size is insufficient to solve the problem because it leads to severe parameter explosion and overfitting. To tackle this problem, we propose a mix-head attention (Mixhead) which mixes multiple attention heads by learnable mixing weights to improve the expressive power of the model. In contrast, Mixhead achieves a higher rank of the attention weight matrix while introducing a negligible number of parameters. Furthermore, Mixhead is quite general and can be easily adopted to most multi-head attention based models. We conduct extensive experiments including language modeling, machine translation, and finetuning BERT to demonstrate the effectiveness of our method.</p>
+<h3 id="url">URL</h3>
+<p>https://www.sciencedirect.com/science/article/pii/S0950705121011503</p>
+<h3 id="code">Code</h3>
+<p>The code for this article is not published</p>
+<h3 id="main-results">Main Results</h3>
+<figure data-type="image" tabindex="1"><img src="https://saoyear.github.io/post-images/1695193683275.jpg" alt="" loading="lazy"></figure>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://saoyear.github.io/tag/LxSu5Vybm/" class="tag">
+                    Publications
+                  </a>
+                
+              </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'd110d408179ab00c332f',
+        clientSecret: 'b054f3e6b2ad769c3d0a095dcf58d74f5884906b',
+        repo: 'SaoYear.github.io',
+        owner: 'SaoYear',
+        admin: ['SaoYear'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

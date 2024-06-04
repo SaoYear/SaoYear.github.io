@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Downloading REAL SUPERVISED waveforms for DESED | EtherSpace of Nian</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://saoyear.github.io/favicon.ico?v=1717479538719">
+<link rel="stylesheet" href="https://saoyear.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="An easy access of useful datasets for the DESED, domestic environment sound event detection dataset, including the weakl..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://saoyear.github.io">
+        <img src="https://saoyear.github.io/images/avatar.png?v=1717479538719" class="site-logo">
+        <h1 class="site-title">EtherSpace of Nian</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            Home
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            Publications
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            Blogs
+          </a>
+        
+      
+        
+          <a href="https://saoyear.github.io/post/about_me" class="site-nav">
+            About me
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/SaoYear" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/saoyear" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Welcome to my site!
+<br />
+I am a PhD. student @ Westlake University. My research interests include <b> sound event detection </b>;  <b>semi-supervised / self-supervised learning </b> in audio processing. <br /> 
+Feel free to contact me: sao_year@126.com
+    </div>
+    <div class="site-footer">
+      Nian Shao, PhD. student @ Westlake University | <a class="rss" href="https://saoyear.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Downloading REAL SUPERVISED waveforms for DESED</h2>
+            <div class="post-date">2023-12-28</div>
+            
+            <div class="post-content" v-pre>
+              <p>An easy access of useful datasets for the DESED, domestic environment sound event detection dataset, including the <strong>weakly labelled real</strong>, <strong>strongly labelled real</strong>, <strong>strongly labelled external real (from StrongAudioSet)</strong> and <strong>DCASE development set</strong>. All datasets are provided with both wavforms and labels.</p>
+<!-- more -->
+<h3 id="desed-dataset">DESED dataset</h3>
+<p>The DESED dataset is used for SED research and <a href="https://dcase.community/challenge2023/index#task4">DCASE challenge</a>.</p>
+<ul>
+<li>
+<p>Weakly labeled data: 44.1kHz, multi-channel, <a href="https://drive.google.com/file/d/1dlnpDPybyah2Q3KI8m4aQWw7uXYI_c_8/view?usp=drive_link">weak data</a></p>
+</li>
+<li>
+<p>Strongly labeled REAL data: 44.1kHz, multi-channel, <a href="https://drive.google.com/file/d/1qNtY4KQcIFArgRhnVugbu7yAyZjZWsn9/view?usp=drive_link">strong data</a></p>
+</li>
+<li>
+<p>Development data: 16kHz, multi-channel, <a href="https://drive.google.com/file/d/10GPzu86nNUaSaL1a-4pEbYd655tN0S6P/view?usp=drive_link">development set</a></p>
+</li>
+<li>
+<p>Extra strongly-labeled data extracted from the <a href="https://research.google.com/audioset/download_strong.html">Strongly-labelled AudioSet</a>: 16kHz, single channel, <a href="https://drive.google.com/file/d/1nA_O-GydTiwsCq47qzdFa9WolTsjtwUw/view?usp=sharing">DESED_from_StrongAS</a></p>
+</li>
+</ul>
+<p>The last set is used in <a href="https://saoyear.github.io/post/finetune_ATST_SED/">ATST-SED</a>.</p>
+<h3 id="desed-dataset-downloading-for-chinese-users">DESED dataset downloading for Chinese users</h3>
+<p>As for the Chinese users, downloading the entire dataset need VPN. I got the permission from Romain and share the complete DESED dataset <a href="https://pan.xunlei.com/s/VNzWiiE1XZGd00jFc_HC72FzA1?pwd=bipt#">here</a>.</p>
+<p>Contact me if you have any question with the downloading process.</p>
+<p>Nian</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://saoyear.github.io/post/finetune_ATST_SED/">
+                  <h3 class="post-title">
+                    Fine-tune the Pretrained ATST Model for Sound Event Detection
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'd110d408179ab00c332f',
+        clientSecret: 'b054f3e6b2ad769c3d0a095dcf58d74f5884906b',
+        repo: 'SaoYear.github.io',
+        owner: 'SaoYear',
+        admin: ['SaoYear'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
