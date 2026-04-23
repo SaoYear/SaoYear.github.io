@@ -57,7 +57,12 @@
       stat2: { en: 'Publications',    zh: '论文' },
       stat3: { en: 'Open to collab',  zh: '开放合作' },
     },
-    postsHead: { en: 'Latest Posts', zh: '最新文章' },
+    postsHead:     { en: 'Latest Posts',          zh: '最新文章' },
+    archivesTitle: { en: 'Publications Archive',  zh: '文章归档' },
+    tagListTitle:  { en: 'Tag List',              zh: '标签列表' },
+    nextPost:      { en: 'Next Post',             zh: '下一篇' },
+    pageNext:      { en: 'Next Page',             zh: '下一页' },
+    pagePrev:      { en: 'Prev Page',             zh: '上一页' },
   };
 
   var STORAGE_KEY = 'site-lang';
@@ -102,15 +107,46 @@
     txt(document.querySelector('.hero-eyebrow'),  UI.hero.eyebrow[lang]);
     txt(document.querySelector('.hero-name'),     UI.hero.name[lang]);
     txt(document.querySelector('.hero-desc'),     UI.hero.desc[lang]);
-    var btns = document.querySelectorAll('.hero-btn');
-    if (btns[0]) btns[0].textContent = UI.hero.btn1[lang];
-    if (btns[1]) btns[1].textContent = UI.hero.btn2[lang];
+    var heroBtns = document.querySelectorAll('.hero-btn');
+    if (heroBtns[0]) heroBtns[0].textContent = UI.hero.btn1[lang];
+    if (heroBtns[1]) heroBtns[1].textContent = UI.hero.btn2[lang];
     var stats = document.querySelectorAll('.hero-stat span');
     if (stats[0]) stats[0].textContent = UI.hero.stat1[lang];
     if (stats[1]) stats[1].textContent = UI.hero.stat2[lang];
     if (stats[2]) stats[2].textContent = UI.hero.stat3[lang];
     var postsH = document.querySelector('.posts-section-head h2');
     if (postsH) postsH.textContent = UI.postsHead[lang];
+
+    /* Archives page */
+    txt(document.querySelector('.archives-title'), UI.archivesTitle[lang]);
+
+    /* Tags page */
+    txt(document.querySelector('.tag-list-title'), UI.tagListTitle[lang]);
+
+    /* Post pages — "Next post" label */
+    document.querySelectorAll('.next-post .next').forEach(function (el) {
+      el.textContent = UI.nextPost[lang];
+    });
+
+    /* Pagination — "下一页 / 上一页" — preserve child <i> icon nodes */
+    function paginationTxt(el, label) {
+      if (!el) return;
+      var icon = el.querySelector('i');
+      el.textContent = label + ' ';
+      if (icon) {
+        if (el.classList.contains('prev')) {
+          el.insertBefore(icon, el.firstChild);
+        } else {
+          el.appendChild(icon);
+        }
+      }
+    }
+    document.querySelectorAll('.pagination-container .next').forEach(function (el) {
+      paginationTxt(el, UI.pageNext[lang]);
+    });
+    document.querySelectorAll('.pagination-container .prev').forEach(function (el) {
+      paginationTxt(el, UI.pagePrev[lang]);
+    });
 
     localStorage.setItem(STORAGE_KEY, lang);
   }
@@ -125,7 +161,7 @@
     btn.addEventListener('click', function () {
       applyLang(getLang() === 'zh' ? 'en' : 'zh');
     });
-    var container = document.querySelector('.sidebar .top-container');
+    var container = document.querySelector('.sidebar');
     if (container) container.appendChild(btn);
   }
 
