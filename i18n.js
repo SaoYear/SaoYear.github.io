@@ -41,6 +41,23 @@
       en: 'Nian Shao, PhD. student @ Westlake University',
       zh: '邵念，西湖大学博士生',
     },
+    hero: {
+      eyebrow: { en: 'Audio Research · Signal Learning', zh: '音频研究 · 信号学习' },
+      name:    { en: 'EtherSpace of Nian', zh: '邵念的主页' },
+      desc: {
+        en: 'PhD student at Westlake University, focused on <b>sound event detection</b> and '
+          + '<b>semi-supervised / self-supervised learning</b> in audio processing.<br>'
+          + 'Contact: sao_year@126.com',
+        zh: '西湖大学博士在读，研究方向为<b>声音事件检测</b>与音频处理中的'
+          + '<b>半监督 / 自监督学习</b>。<br>联系方式：sao_year@126.com',
+      },
+      btn1:  { en: 'Publications', zh: '发表论文' },
+      btn2:  { en: 'Contact',      zh: '联系我' },
+      stat1: { en: 'Research tracks', zh: '研究方向' },
+      stat2: { en: 'Publications',    zh: '论文' },
+      stat3: { en: 'Open to collab',  zh: '开放合作' },
+    },
+    postsHead: { en: 'Latest Posts', zh: '最新文章' },
   };
 
   var STORAGE_KEY = 'site-lang';
@@ -79,6 +96,21 @@
     /* Update button label */
     var btn = document.querySelector('.lang-btn');
     if (btn) btn.textContent = lang === 'zh' ? 'EN' : '中文';
+
+    /* Hero section (homepage only) */
+    function txt(el, val) { if (el) el.innerHTML = val; }
+    txt(document.querySelector('.hero-eyebrow'),  UI.hero.eyebrow[lang]);
+    txt(document.querySelector('.hero-name'),     UI.hero.name[lang]);
+    txt(document.querySelector('.hero-desc'),     UI.hero.desc[lang]);
+    var btns = document.querySelectorAll('.hero-btn');
+    if (btns[0]) btns[0].textContent = UI.hero.btn1[lang];
+    if (btns[1]) btns[1].textContent = UI.hero.btn2[lang];
+    var stats = document.querySelectorAll('.hero-stat span');
+    if (stats[0]) stats[0].textContent = UI.hero.stat1[lang];
+    if (stats[1]) stats[1].textContent = UI.hero.stat2[lang];
+    if (stats[2]) stats[2].textContent = UI.hero.stat3[lang];
+    var postsH = document.querySelector('.posts-section-head h2');
+    if (postsH) postsH.textContent = UI.postsHead[lang];
 
     localStorage.setItem(STORAGE_KEY, lang);
   }
